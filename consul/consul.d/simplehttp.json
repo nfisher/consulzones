@@ -1,0 +1,15 @@
+{
+  "service": {
+    "name": "simplehttp",
+    "tags": ["python"],
+    "address": "127.0.0.1",
+    "port": 8000,
+    "checks": [
+      {
+        "http": "http://localhost:8000/",
+        "interval": "5s"
+      }
+    ]
+  }
+}
+
