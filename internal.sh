@@ -24,6 +24,7 @@ export GOMAXPROCS=2
   -bind 192.168.33.10 -node internal.local \
   -ui-dir /vagrant/consul/dist \
   -retry-join 192.168.33.11 -retry-interval 5s \
+  -server -bootstrap-expect 1 \
   > /vagrant/logs/internal.log 2>&1 &
 
 yum install -y haproxy
